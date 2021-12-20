@@ -90,6 +90,8 @@ import Calender from "../pages/app/calender/Calender";
 /** IT-Team */
 import Student from '../pages/student';
 import StudentDetail from "../pages/student/PagesStudent/StudentDetail";
+
+import Class from '../pages/class';
 /************/
 
 const Pages = () => {
@@ -101,8 +103,11 @@ const Pages = () => {
     <Suspense fallback={<div />}>
       <Switch>
         {/** IT-Team */}
+        {/*  Student*/}
         <Route exact path={`${process.env.PUBLIC_URL}/students`} component={Student}/>
         <Route exact path={`${process.env.PUBLIC_URL}/students/detail/:id`} component={StudentDetail}/>
+        {/*class*/}
+        <Route exact path={`${process.env.PUBLIC_URL}/class`} component={Class} />
         {/************/}
 
         {/*Panel */}

@@ -8,6 +8,11 @@ const menu = [
     link: "/students",
   },
   {
+    icon: "user-list",
+    text: "Class",
+    link: "/class",
+  },
+  {
     heading: "Use-case preview",
   },
   {
